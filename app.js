@@ -4,11 +4,11 @@ const staff = require('./routes/staff');
 
 const app = express();
 
-const user = 'xx';
-const pw = 'xx';
-const db = 'xx';
+const user = 'torti';
+const pw = 'torti123';
+const db = 'company';
 
-const dbURI = 'xx';
+const dbURI = 'mongodb+srv://' + user + ':' + pw + '@cluster0.dn1sc.mongodb.net/' + db + '?retryWrites=true&w=majority';
 console.log(dbURI);
 mongoose.connect(dbURI)
     .then((result) => {
